@@ -15,14 +15,57 @@ using System.Windows.Shapes;
 
 namespace Clicker
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
+        int a = 0;
+
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void Ellipse_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+            if (a < 10)
+            {
+                a = a + 1;
+                textBlock.Text = String.Format("{0}", a);
+                return;
+            } 
+            if (a < 20) {
+                a = a + 2;
+                textBlock.Text = String.Format("{0}", a);
+                return;
+            }
+            if (a < 30)
+            {
+                a = a + 5;
+                textBlock.Text = String.Format("{0}", a);
+                return;
+            }
+            if (a < 40)
+            {
+
+                a = a + 10;
+                textBlock.Text = String.Format("{0}", a);
+                return;
+            }
+            if (a < 50)
+            {
+
+                a = a + 50;
+                textBlock.Text = String.Format("{0}", a);
+                return;
+            }
+            else
+            {
+                a = a + 100;
+                textBlock.Text = String.Format("{0}", a);
+                return;
+            }
+        }
+
     }
 }

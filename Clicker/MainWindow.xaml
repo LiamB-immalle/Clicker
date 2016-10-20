@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Clicker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525"
+        WindowState="Maximized">
     <Grid>
-        
+        <Canvas>
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.891"/>
+                    <GradientStop Color="#FF63D404" Offset="0.004"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+            <Ellipse Fill="#FF9B6416" Height="150" Canvas.Left="46" Stroke="Black" Canvas.Top="31" Width="150" MouseLeftButtonDown="Ellipse_MouseLeftButtonDown"/>
+            <TextBlock x:Name="textBlock" Canvas.Left="116" TextWrapping="Wrap" Canvas.Top="213" Width="275" Height="31" Background="#FF00FF5D"/>
+        </Canvas>
+
     </Grid>
 </Window>
