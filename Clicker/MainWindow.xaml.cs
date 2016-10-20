@@ -28,41 +28,47 @@ namespace Clicker
         private void Ellipse_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
-            if (a < 10)
+            if (a < 200)
             {
                 a = a + 1;
                 textBlock.Text = String.Format("{0}", a);
+                multiplier.Text = ("1 per klik");
                 return;
             } 
-            if (a < 20) {
+            if (a < 500) {
                 a = a + 2;
                 textBlock.Text = String.Format("{0}", a);
+                multiplier.Text = ("2 per klik");
                 return;
             }
-            if (a < 30)
+            if (a < 1500)
             {
                 a = a + 5;
                 textBlock.Text = String.Format("{0}", a);
+                multiplier.Text = ("5 per klik");
                 return;
             }
-            if (a < 40)
+            if (a < 4000)
             {
 
                 a = a + 10;
                 textBlock.Text = String.Format("{0}", a);
+                multiplier.Text = ("10 per klik");
                 return;
             }
-            if (a < 50)
+            if (a < 10000)
             {
 
                 a = a + 50;
                 textBlock.Text = String.Format("{0}", a);
+                multiplier.Text = ("50 per klik");
                 return;
             }
             else
             {
                 a = a + 100;
                 textBlock.Text = String.Format("{0}", a);
+                multiplier.Text = ("100 per klik");
                 return;
             }
         }
