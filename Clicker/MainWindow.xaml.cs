@@ -24,18 +24,17 @@ namespace Clicker
         {
             InitializeComponent();
         }
-
-        private void Ellipse_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void ClickCount()
         {
-
             if (a < 200)
             {
                 a = a + 1;
                 textBlock.Text = String.Format("{0}", a);
                 multiplier.Text = ("1 per klik");
                 return;
-            } 
-            if (a < 500) {
+            }
+            if (a < 500)
+            {
                 a = a + 2;
                 textBlock.Text = String.Format("{0}", a);
                 multiplier.Text = ("2 per klik");
@@ -73,5 +72,17 @@ namespace Clicker
             }
         }
 
+        private void Ellipse_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            ClickCount();
+            koekje.Height = 145;
+            koekje.Width = 145;
+        }
+
+        private void koekje_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            koekje.Height = 150;
+            koekje.Height = 150;
+        }
     }
 }

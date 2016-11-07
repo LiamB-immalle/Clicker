@@ -15,7 +15,7 @@
                     <GradientStop Color="#FF63D404" Offset="0.004"/>
                 </LinearGradientBrush>
             </Canvas.Background>
-            <Ellipse Fill="#FF9B6416" Height="150" Canvas.Left="62" Stroke="Black" Canvas.Top="88" Width="150" MouseLeftButtonDown="Ellipse_MouseLeftButtonDown"/>
+            <Ellipse x:Name="koekje" Fill="#FF9B6416" Height="150" Canvas.Left="62" Stroke="Black" Canvas.Top="88" Width="150" MouseLeftButtonDown="Ellipse_MouseLeftButtonDown" MouseLeftButtonUp="koekje_MouseLeftButtonUp"/>
             <TextBlock x:Name="textBlock" Canvas.Left="62" TextWrapping="Wrap" Canvas.Top="28" Width="150" Height="55" Background="#FF00FF5D" FontSize="24"/>
             <TextBlock x:Name="multiplier" Canvas.Left="246" TextWrapping="Wrap" Canvas.Top="28" Width="150" Height="55" Background="#FF00FF5D" FontSize="24"/>
         </Canvas>
