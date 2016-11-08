@@ -72,17 +72,10 @@ namespace Clicker
             }
         }
 
-        private void Ellipse_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void koekje_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             ClickCount();
-            koekje.Height = 145;
-            koekje.Width = 145;
         }
 
-        private void koekje_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            koekje.Height = 150;
-            koekje.Height = 150;
-        }
     }
 }
